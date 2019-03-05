@@ -31,7 +31,6 @@ export default class App extends React.Component {
 
     onContentLoaded(index, content) {
         try {
-            let prettyJson;
             const data = JSON.parse(content);
             const response = Array.isArray(data) ? data[index] : data;
             this.setState({response: response});
